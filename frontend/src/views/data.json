@@ -1,0 +1,49 @@
+
+
+
+
+
+[
+    {
+        "Course": "Python Programming",
+        "Tutor": "Mosh Hamedani",
+        "Skills": "Python Language, Data Structures, and Automation",
+        "Enrolled": "2000+ students",
+        "officialWebsite": "https://codewithmosh.com"
+    },
+    {
+        "Course": "Web Development",
+        "Tutor": "Colt Steele",
+        "Skills": "HTML, CSS, JavaScript, React, and Backend Development",
+        "Enrolled": "3500+ students",
+        "officialWebsite": "https://www.udemy.com/course/the-web-developer-bootcamp/"
+    },
+    {
+        "Course": "Data Science with Python",
+        "Tutor": "Jose Portilla",
+        "Skills": "Data Analysis, Machine Learning, and Visualization",
+        "Enrolled": "5000+ students",
+        "officialWebsite": "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/"
+    },
+    {
+        "Course": "Java Programming",
+        "Tutor": "Tim Buchalka",
+        "Skills": "Java Language, OOP Concepts, and Application Development",
+        "Enrolled": "3000+ students",
+        "officialWebsite": "https://www.udemy.com/course/java-the-complete-java-developer-course/"
+    },
+    {
+        "Course": "Full-Stack Development",
+        "Tutor": "Angela Yu",
+        "Skills": "Front-End, Back-End, and Deployment Skills",
+        "Enrolled": "4000+ students",
+        "officialWebsite": "https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+    },
+    {
+        "Course": "C++ Programming",
+        "Tutor": "Kate Gregory",
+        "Skills": "C++ Language, Algorithms, and Competitive Programming",
+        "Enrolled": "2500+ students",
+        "officialWebsite": "https://www.pluralsight.com/authors/kate-gregory"
+    }
+]

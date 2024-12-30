@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html, body, #root, #defaultLayout, #guestLayout {
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h2{
+    font-size: 2rem;
+    font-style:initial;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #212121;
+    background: linear-gradient(to top, #757575, #000000);
+}
+
+input {
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: #5b08a7;
+}
+
+.btn,
+.btn-add,
+.btn-edit,
+.btn-delete {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    border: 0;
+    text-decoration: none;
+    padding: 15px;
+    color: #000000;
+    font-size: 16px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-add,
+.btn-edit,
+.btn-delete{
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.btn-add {
+    background-color: #00a762;
+}
+.btn-delete {
+    background-color: #b72424;
+}
+
+.btn-logout {
+    background: rgb(234, 234, 234);
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.btn-logout:hover {
+    transform: scale(1.0);
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+  
+    
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background: #000000;
+    color:white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table > thead > tr > th {
+    text-align: left;
+    padding: 0.5rem 0.5rem;
+    /* background-color: #efefef; */
+    border-bottom: 1px solid #efefef;
+    
+}
+
+table > tbody > tr > td {
+    padding: 0.5rem 0.5rem;
+   
+    white-space: nowrap;
+}
+
+.card {
+    /* background-color: #FFF; */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: #ffffff;
+}
+
+.alert {
+    padding: 1rem;
+    background-color: #ff4040;
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.notification {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+    padding: 1rem 1.5rem;
+    background-color: #00a762;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+/* Login/Signup forms*/
+
+.login-signup-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login-signup-form .form {
+    width: 360px;
+    position: relative;
+    z-index: 1;
+    /* background: #FFFFFF; */
+    max-width: 360px;
+    padding: 34px;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.login-signup-form .title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-signup-form .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-signup-form .form .message a {
+    color: #5b08a7;
+    text-decoration: none;
+}
+
+/* Login/Signup form */
+
+
+#defaultLayout {
+    display: flex;
+}
+
+#defaultLayout aside {
+    width: 240px;
+    background-color: #5b08a7;
+    padding: 1rem
+}
+
+#defaultLayout aside > a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#defaultLayout aside > a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#defaultLayout .content {
+    flex: 1;
+}
+
+#defaultLayout header {
+    height: 50px;
+    padding: 1rem 1rem;
+   
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#defaultLayout main {
+    padding: 2rem;
+}
+
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.s-card{
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+    width: 100%;
+    /* background:#eadffc; */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    border-color: rgba(135, 135, 135, 0.575);
+
+    color: #ffffff;
+    transition: 0.3s;
+
+
+}
+
+.s-card:hover{
+    border-color: rgb(255, 255, 255);
+
+}
+
+.s-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.s-card h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.s-card span{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    
+}
+
+.s-card button{
+    font-size: large;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #e5d9f274;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.3s;
+    color : white;
+    
+    
+
+    margin: auto;
+}
+
+.s-card button:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #000000;
+    font-weight:700;
+}
+
+.loading-spin{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    z-index: 2;
+
+    margin-left: 45vw;
+}
+
+.s-logo{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.s-logo:hover{
+    transform: scale(1.5);
+}
+/* CSS File: App.css */
+
+/* Reset and Global Styles */
+
+  
+  .HomePage {
+    text-align: center;
+    
+  }
+  
+ 
+.header {
+    /* background: linear-gradient(to right, #323238, #000000); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-button {
+    background: rgb(234, 234, 234);
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+  .nav-button:hover {
+    transform: scale(1.0);
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+  }
+
+  
+  
+  /* Hero Section */
+  .hero-section {
+    height: 45vh;
+    /*background-image: url('https://images4.alphacoders.com/176/thumb-1920-176126.jpg');*/
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 48px;
+  }
+  
+  .hero-section p {
+    font-size: 20px;
+    max-width: 800px;
+  }
+  
+  /* Info Section */
+.info-section {
+    /* background: #9694FF; */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+  
+  .info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .info-card {
+    background: white;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  .footer {
+    /* background: #FF2929; */
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
